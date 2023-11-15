@@ -18,6 +18,7 @@ class GuestFactory extends Factory
     {
         return [
             'nama_tamu'=> fake()->name(),
+            'petugas_checkin' => mt_rand(1, 10),
             'keperluan_tamu'=> fake()->realTextBetween($minNbchars = 20, $maxNbchars = 40, $indexSize = 5),
             'bertemu' => fake()->name(),
             'asal_instansi' => fake()-> company(),
